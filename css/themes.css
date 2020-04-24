@@ -1,0 +1,62 @@
+body.themeColor{
+  --colorBackground: #f5f5f5;
+  --colorHeaderBackground: var(--colorAccentPrimary);
+  --colorNavBackground: var(--colorHeaderBackground);
+  --colorAccentPrimary: #ef5350;
+  --colorAccentSecondary: #428e92;
+  --colorTextPrimary: #212121;
+  --colorTextSecondary: #777777;
+  --colorTextInverse: #ffffff;
+  --colorBorderPrimary: #aeaeae;
+  --colorBorderSecondary: #e0e0e0;
+  --colorLogo: var(--colorTextInverse);
+  --borderRadius: 3px;
+
+  --fontSecondary: 'Baloo Chettan 2', cursive;
+  --fontPrimary: 'Ubuntu', sans-serif;
+  --fontLogo: 'Pacifico', cursive;
+}
+
+body.themeDark {
+  --colorBackground: #212121;
+  --colorHeaderBackground: #004d40;
+  --colorNavBackground: var(--colorHeaderBackground);
+
+  --colorTextPrimary: #ffffff;
+  --colorTextSecondary: #777777;
+  --colorTextInverse: #fff;
+  --colorLogo: var(--colorTextPrimary);
+
+  --colorAccentPrimary: #f9683a;
+  --colorAccentSecondary: #66bb6a;
+
+  --colorBorderPrimary: #e0e0e0;
+  --colorBorderSecondary: #242424;
+  --borderRadius: 3px;
+
+  --fontSecondary: 'Baloo Chettan 2', cursive;
+  --fontPrimary: 'Ubuntu', sans-serif;
+  --fontLogo: 'Pacifico', cursive;
+}
+
+body.themeGray {
+  --colorBackground: #445566;
+  --colorHeaderBackground: #223344;
+  --colorNavBackground: var(--colorHeaderBackground);
+
+  --colorTextPrimary: #ffffff;
+  --colorTextSecondary: #778899;
+  --colorTextInverse: #fff;
+  --colorLogo: var(--colorTextPrimary);
+
+  --colorAccentPrimary: #ff9e80;
+  --colorAccentSecondary: #66bb6a;
+
+  --colorBorderPrimary: #e0e0e0;
+  --colorBorderSecondary: #778899;
+  --borderRadius: 3px;
+
+  --fontSecondary: 'Pacifico', cursive;
+  --fontPrimary: 'Ubuntu', sans-serif;
+  --fontLogo: 'Baloo Chettan 2', cursive;
+}

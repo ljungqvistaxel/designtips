@@ -1,0 +1,31 @@
+.verktyg{
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--colorBorderSecondary);
+  border-radius: var(--borderRadius);
+  border: var(--colorBorderPrimary) 1px dotted;
+  display: flex;
+  justify-content: center;
+}
+
+.tema{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  filter: var(--dropShadow);
+  margin: 10px;
+}
+
+.tema0{
+  background-color: #ef5350;
+}
+
+.tema1{
+  background-color: #004d40;
+}
+
+.tema2{
+  background-color: #223344;
+}
