@@ -259,11 +259,12 @@ footer p{
 
 header.compact{
   transition: all 1s ease 0s;
-  height: 60px;
+  transform: translateY(-240px);
+  /* height: 60px; */
 }
 
 header h2.compact{
-
+  margin-top: 240px;
   width: 150px;
   line-height: 0px;
   font-size: 30px;
