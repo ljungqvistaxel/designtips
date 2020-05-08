@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,700|Pacifico|Ubuntu:400,400i,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
 *{
-  transition: color 0.5s 0s ease,
-              background-color 1s 0s ease;
+  transition: background-color 0.5s 0s ease;
 }
 
 :root{
@@ -29,6 +30,7 @@
 }
 
 body{  /*Canvas*/
+  transition: background 0.5s ease, color 0.5s ease;
   font-family: var(--fontPrimary);
   margin: 0px;
   padding: 0px;
@@ -51,12 +53,13 @@ header{
   clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 5vw), 50% 100%, 0% calc(100% - 5vw));
 }
 
-.headerShadow{
+#headerShadow{
   width: 100%;
   position:fixed;
   filter: var(--dropShadow);
   overflow: hidden;
   z-index: 2;
+  height: 310px;
 }
 
 header img{
@@ -114,63 +117,6 @@ nav{
   flex-wrap: wrap;
   transition: all 0.3s ease, height 0s;
 }
-
-/*.navFixed{
-
-  position: fixed;
-  width: 250px;
-   background-color: var(--colorBackground);
-  height: 100%;
-  padding: 0px;
-  flex-direction: column;
-
-  flex-wrap: nowrap;
-  z-index: 0 !important;
-}
-
-.navFixed a{
-  position: relative;
-  color: rgba(255,255,255,0);
-  text-align:left;
-  margin: 10px 20px;
-  padding: 20px;
-  margin-left: 0px;
-  left: -180px;
-   background-color: var(--colorAccentPrimary);
-  border-bottom-right-radius: var(--borderRadius);
-  border-top-right-radius: var(--borderRadius);
-  transition: left 0.5s 0.3s ease, background 0.2s ease, filter 0.1s 0s ease, color 0.1s ease;
-  z-index: 1 !important;
-}
-
-.navFixed a img{
-  position: absolute;
-  right: 0px;
-  top: 25%;
-  right: 10px;
-  height: 50%;
-  width: auto;
-  z-index: 1;
-  filter: invert(0.85);
-  transition: invert 0.3s ease;
-}
-
-body.themeDark .navFixed a img{
-  filter: invert(0.0);
-}
-
-
-.navFixed a:hover{
-  background-color: var(--colorAccentSecondary);
-  color: var(--colorTextInverse);
-  left: 0px;
-  filter: var(--dropShadow);
-  transition: left 0.3s 0s ease, background 0.5s ease, filter 0.3s 0.1s ease;
-}
-
-.navFixed a:hover img{
-  filter: none;
-}*/
 
 nav a{
 
@@ -258,6 +204,12 @@ footer p{
   animation: navcompact 0.6s 1;
 }
 
+#headerShadow.compact{
+  transition: all 1s ease 0s;
+  /* transform: translateY(-240px); */
+  height: 80px;
+}
+
 header.compact{
   transition: all 1s ease 0s;
   transform: translateY(-240px);
@@ -296,7 +248,6 @@ header h2.compact{
   font-size: 30px;
   margin-left: 15px;
 } */
-
 
 
 @media screen and (max-width: 1000px) {

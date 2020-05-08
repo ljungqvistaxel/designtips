@@ -36,7 +36,7 @@ body.themeDark {
 
   --fontSecondary: 'Baloo Chettan 2', cursive;
   --fontPrimary: 'Ubuntu', sans-serif;
-  --fontLogo: 'Pacifico', cursive;
+  --fontLogo: 'DM Mono', monospace;
 }
 
 body.themeGray {

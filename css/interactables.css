@@ -8,9 +8,10 @@
   border: var(--colorBorderPrimary) 1px dotted;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.tema{
+.verktyg button{
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -21,11 +22,29 @@
 .tema0{
   background-color: #ef5350;
 }
-
 .tema1{
   background-color: #004d40;
 }
-
 .tema2{
   background-color: #223344;
+}
+
+.fontx{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5em;
+  background-color: #b71c1c;
+  color: white;
+  line-height: 0px;
+}
+.font0{
+  font-family: 'Pacifico', cursive;
+}
+.font1{
+  font-family: 'Ubuntu', sans-serif;
+}
+.font2{
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.font3{
+  font-family: 'DM Mono', monospace;
 }
