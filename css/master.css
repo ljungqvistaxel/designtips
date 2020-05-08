@@ -267,7 +267,8 @@ header h2.compact{
   margin-top: 240px;
   width: 150px;
   line-height: 0px;
-  font-size: 30px;
+  /* font-size: 30px; */
+  transform: scale(calc(30 / 50));
   margin-left: 15px;
 }
 
