@@ -1,12 +1,12 @@
 function onload() {
   onscroll();
-  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
-  if(isSafari){
+  var userAgent = window.navigator.userAgent;
+  if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
     document.getElementById("headerShadow").style["filter"] = "none";
-    alert("safari");
+    alert("safari !");
   }else{
-    alert("not safari");
+    alert("not safari !");
   }
 }
 
