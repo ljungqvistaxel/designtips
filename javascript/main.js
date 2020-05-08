@@ -4,9 +4,9 @@ function onload() {
   var userAgent = window.navigator.userAgent;
   if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
     document.getElementById("headerShadow").style["filter"] = "none";
-    alert("safari !");
+    console.log("safari");
   }else{
-    alert("not safari !");
+    console.log("not safari");
   }
 }
 
