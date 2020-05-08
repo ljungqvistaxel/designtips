@@ -1,6 +1,11 @@
+function onload() {
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+  document.getElementById("headerShadow").style["filter"] = "";
+}
+
 function onscroll() {
   var header = document.getElementById("header");
-  var headerShadow = document.getElementById("headerShadow")[0];
+  var headerShadow = document.getElementById("headerShadow");
   var headerNav = document.getElementById("headerNav");
   var title = document.getElementById("title");
 
