@@ -1,6 +1,9 @@
 function onload() {
+  onscroll();
   var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-  document.getElementById("headerShadow").style["filter"] = "";
+
+  if(isSafari)
+    document.getElementById("headerShadow").style["filter"] = "none";
 }
 
 function onscroll() {
