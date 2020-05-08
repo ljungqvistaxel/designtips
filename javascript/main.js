@@ -4,9 +4,9 @@ function onload() {
 
   if(isSafari){
     document.getElementById("headerShadow").style["filter"] = "none";
-    console.log("safari");
+    alert("safari");
   }else{
-    console.log("not safari");
+    alert("not safari");
   }
 }
 
