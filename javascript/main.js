@@ -19,22 +19,25 @@ function onscroll() {
   var andel = (window.scrollY/100);
   //console.log(andel);
 
-  if (andel < 1){ //SPECIALGREJER
-    //header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% calc(100% - "+ (5-andel*5) +"vw), 50% 100%, 0% calc(100% - "+ (5-andel*5) +"vw))";
-    header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% calc(100% - 5vw), 50% 100%, 0% calc(100% - 5vw))";
-  }else{
-    header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)";
-  }
 
-  if(window.innerWidth >= 780){ //DESKTOP
-    if(window.scrollY < 250){
-      //document.getElementById("navFixed").style['left'] = "-60px";
+
+  if(window.innerWidth >= 1000){ //DESKTOP
+
+    if (andel < 1){ //SPECIALGREJER
+      //header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% calc(100% - "+ (5-andel*5) +"vw), 50% 100%, 0% calc(100% - "+ (5-andel*5) +"vw))";
+      header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% calc(100% - 3vw), 50% 100%, 0% calc(100% - 3vw))";
     }else{
-      //document.getElementById("navFixed").style['left'] = "0px";
+      header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)";
     }
+
   }else{ //MOBILE
 
-
+    if (andel < 1){ //SPECIALGREJER
+      //header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% calc(100% - "+ (5-andel*5) +"vw), 50% 100%, 0% calc(100% - "+ (5-andel*5) +"vw))";
+      header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% calc(100% - 5vw), 50% 100%, 0% calc(100% - 5vw))";
+    }else{
+      header.style['clip-path'] = "polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)";
+    }
 
   }
 

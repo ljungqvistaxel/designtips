@@ -17,22 +17,23 @@
   border-radius: 20px;
   filter: var(--dropShadow);
   margin: 10px;
+  background-color: var(--colorBackground);
 }
 
 .tema0{
-  background-color: #ef5350;
+  background-color: #ef5350 !important;
 }
 .tema1{
-  background-color: #004d40;
+  background-color: #004d40 !important;
 }
 .tema2{
-  background-color: #223344;
+  background-color: #223344 !important;
 }
 
 .fontx{
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5em;
-  background-color: #b71c1c;
+  background-color: #b71c1c !important;
   color: white;
   line-height: 0px;
 }

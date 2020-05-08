@@ -40,7 +40,7 @@ body{  /*Canvas*/
 }
 
 header{
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ header img{
 }
 
 header h2{
-  transition: all 0.5s ease, width 0.7s ease 0s;
+  transition: all 0.6s ease, width 0.9s ease 0s;
   line-height: 100px;
   margin: 0px;
   padding: 0px;
@@ -180,13 +180,13 @@ footer p{
 }
 
 #headerNav{
-  transition: all 1s ease;
+  transition: all 1.5s ease 0s;
   top: 10px;
   line-height: 0px;
-  -webkit-animation: navbig 0.6s 1;
-  -moz-animation: navbig 0.6s 1;
-  -o-animation: navbig 0.6s 1;
-  animation: navbig 0.6s 1;
+  -webkit-animation: navbig 1s 1;
+  -moz-animation: navbig 1s 1;
+  -o-animation: navbig 1s 1;
+  animation: navbig 1s 1;
 }
 
 #headerNav.compact{
@@ -198,10 +198,10 @@ footer p{
   line-height: 0px;
   margin-left: 150px;
   margin-right: 150px;
-  -webkit-animation: navcompact 0.6s 1;
-  -moz-animation: navcompact 0.6s 1;
-  -o-animation: navcompact 0.6s 1;
-  animation: navcompact 0.6s 1;
+  -webkit-animation: navcompact 1s 1;
+  -moz-animation: navcompact 1s 1;
+  -o-animation: navcompact 1s 1;
+  animation: navcompact 1s 1;
 }
 
 #headerShadow.compact{
@@ -283,6 +283,7 @@ header h2.compact{
     line-height: 15px;
   }
 
+
   #headerNav.compact{
     transition: all 0.3s ease;
     /* height: 0px;
@@ -300,7 +301,11 @@ header h2.compact{
   }
 
   header.compact{
-    /* height: 60px; */
+    transition: all 0.5s ease 0s;
+  }
+
+  header h2{
+    transition: all 0.8s ease, width 0.5s ease 0s;
   }
 
   header h2.compact{
