@@ -59,7 +59,7 @@ header{
   filter: var(--dropShadow);
   overflow: hidden;
   z-index: 2;
-  height: 310px;
+  height: 320px;
 }
 
 header img{
@@ -207,7 +207,7 @@ footer p{
 #headerShadow.compact{
   transition: all 1s ease 0s;
   /* transform: translateY(-240px); */
-  height: 80px;
+  height: 100px;
 }
 
 header.compact{
