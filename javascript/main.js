@@ -2,8 +2,12 @@ function onload() {
   onscroll();
   var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
-  if(isSafari)
+  if(isSafari){
     document.getElementById("headerShadow").style["filter"] = "none";
+    console.log("safari");
+  }else{
+    console.log("not safari");
+  }
 }
 
 function onscroll() {
