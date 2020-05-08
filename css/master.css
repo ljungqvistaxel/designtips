@@ -317,7 +317,7 @@ header h2.compact{
   }
 
   #headerNav{
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, opacity 0.3s decellerate 0.2s;
     /* height: 0px;
     padding-top: 0px;
     top: -50px;
