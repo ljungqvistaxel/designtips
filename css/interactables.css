@@ -11,6 +11,18 @@
   flex-wrap: wrap;
 }
 
+.verktygsrad{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  border: 1px dotted var(--colorBorderPrimary);
+  padding: 5px;
+  margin: 5px;
+  border-radius: var(--borderRadius);
+}
+
 .verktyg button{
   width: 40px;
   height: 40px;
@@ -48,4 +60,31 @@
 }
 .font3{
   font-family: 'DM Mono', monospace;
+}
+
+.animationdummy{
+  width: 20px;
+  height: 20px;
+  background-color: #456789;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: calc(50% - 10px);
+  left: 80px;
+  right: auto;
+  position: absolute;
+}
+.dummy-1{
+  transition: all 2s ease;
+}
+.dummy0{
+  transition: all 1s ease;
+}
+.dummy1{
+  transition: all 0.5s ease;
+}
+.dummy2{
+  transition: all 0.25s ease;
+}
+.dummy3{
+  transition: all 0.125s ease;
 }

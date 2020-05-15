@@ -92,3 +92,13 @@ function font(font) {
     document.body.style["font-family"] = "'DM Mono', monospace";
   }
 }
+
+function anim(anim) {
+  var dummy = document.getElementsByClassName("dummy"+anim.toString())[0];
+  dummy.classList.toggle("active");
+  if(dummy.classList.contains("active")){
+    dummy.style["transform"] = "translateX("+(document.getElementsByClassName("verktygsrad")[0].clientWidth - 120).toString()+"px) rotate(90deg)";
+  }else{
+    dummy.style["transform"] = "";
+  }
+}
