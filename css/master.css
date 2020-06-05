@@ -75,7 +75,7 @@ header img{
   z-index: 2;
   margin: 0px;
   padding: 0px;
-  filter: blur(5px) brightness(0.5);
+  /* filter: blur(5px) brightness(0.5); */
   transform: scale(1.1);
 }
 
