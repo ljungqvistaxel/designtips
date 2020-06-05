@@ -2,7 +2,7 @@ function onload() {
   onscroll();
 
   var userAgent = window.navigator.userAgent;
-  if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+  if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i || window.navigator.userAgent.indexOf("Edge") > -1)) {
     document.getElementById("headerShadow").style["filter"] = "none";
     console.log("safari");
   }else{
